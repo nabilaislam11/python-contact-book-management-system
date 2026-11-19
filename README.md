@@ -1,50 +1,53 @@
 # Contact Book Management System
 
-A Python contact-management application for organizing personal contact records using CSV file storage.
+A modular **Python command-line application** for managing contact records with CSV persistence.
 
 ## Features
 
-The application is organized into modules for:
-
-- Adding contacts
-- Searching saved contacts
-- Updating contact information
-- Viewing all contacts
-- Deleting contact records
-- Loading and saving contact data
-
-## Technology stack
-
-- **Language:** Python
-- **Data storage:** CSV (`contacts.csv`)
-- **Structure:** Modular Python scripts
-
-## Project files
-
-The Python source files are available directly in this repository. The original project archive is preserved in [`ContactBook.rar`](ContactBook.rar). Its application files include:
-
-| File | Purpose |
-| --- | --- |
-| `main.py` | Application entry point |
-| `add_contacts.py` | Add contact records |
-| `search_contacts.py` | Search contacts |
-| `update_contacts.py` | Update contact records |
-| `view_all_contacts.py` | Display saved contacts |
-| `delete_all_contact.py` | Delete contact records |
-| `load_contacts.py` | Load contact data |
-| `save_contacts.py` | Save contact data |
-| `contacts.csv` | Contact storage |
+- Add contact details (name, email, phone, and address)
+- Search contacts by name, email, or phone number
+- View saved contacts in a formatted table
+- Update individual contact records
+- Delete contacts by selection
+- Preserve records in a CSV file across application sessions
+- Validate phone number input and prevent duplicate phone entries
 
 ## Run locally
 
-1. Clone or download this repository.
-2. Open a terminal in the repository directory.
-3. Run:
+Requires Python 3.9+ and no third-party packages.
 
 ```bash
+git clone https://github.com/nabilaislam11/python-contact-book-management-system.git
+cd python-contact-book-management-system
 python main.py
 ```
 
-## Concepts
+Choose an option from the menu to manage contacts. Data is saved to `contacts.csv` in the current project directory.
 
-Python modules, file handling, CSV-based persistence, and contact-record management.
+## Run tests
+
+```bash
+python -m unittest discover -s tests -v
+```
+
+The [GitHub Actions workflow](.github/workflows/python-tests.yml) compiles the Python modules and runs seven regression tests covering CSV persistence, addition, duplicate detection, updating, searching, deleting, and empty contact lists.
+
+## Project structure
+
+| File | Responsibility |
+| --- | --- |
+| `main.py` | Interactive command-line menu |
+| `add_contacts.py` | Add new contact records |
+| `search_contacts.py` | Search contact records |
+| `update_contacts.py` | Modify saved contact records |
+| `view_all_contacts.py` | Display contacts |
+| `delete_all_contact.py` | Remove selected contacts |
+| `load_contacts.py` | Read CSV storage |
+| `save_contacts.py` | Write CSV storage |
+| `contacts.csv` | Local contact data |
+| `tests/` | Automated regression tests |
+| `ContactBook.rar` | Original project archive |
+
+## Technologies
+
+Python · Standard Library · CSV file handling · unittest
