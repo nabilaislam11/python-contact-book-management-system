@@ -1,23 +1,30 @@
-# Contact Book Management System
+# Book Management System
 
-An academic **Contact Book Management System** project focused on organizing and managing contact information.
+Academic software projects covering contact management and an online bookshop.
 
-## Project overview
+## Bookshop Management System
 
-The project is preserved in the original `ContactBook.rar` source archive. This repository keeps the project materials together under a descriptive title.
+The bookshop project is a **PHP and MySQL** web application with a customer-facing storefront and administrative interfaces. Its application structure includes:
 
-## Project files
+- Book listings organized by category and subcategory
+- Book records with titles and authors
+- Product inventory, quantities, and prices
+- Customer registration and login
+- Order placement, order records, and delivery details
+- Administrative pages for products, inventory, categories, users, and orders
 
-| File | Description |
-| --- | --- |
-| [`ContactBook.rar`](ContactBook.rar) | Original contact book project archive |
+**Technology:** PHP, MySQL, HTML, CSS, JavaScript, and Bootstrap-based administration UI.
 
-## Getting started
+**Project source reference:** [Book_shop_management](https://github.com/Khandaker-Atik/Book_shop_management).
 
-1. Download `ContactBook.rar` from this repository.
-2. Extract the archive using an application that supports RAR files.
-3. Open the extracted project files in the appropriate development environment.
+### Local environment
 
-## Project focus
+The bookshop application uses XAMPP-compatible PHP/MySQL hosting. The source reference documents the `book_shop` directory under `htdocs`, the `book_shop_db` database, and an SQL import for initialization.
 
-The project explores contact information management as an academic software-development exercise.
+## Contact Book Management System
+
+The existing [`ContactBook.rar`](ContactBook.rar) contains the contact-book project materials. Keep this archive intact when organizing the bookshop application.
+
+## Repository organization
+
+The bookshop application and contact-book archive are kept distinct so their source files and setup instructions can be maintained independently.
