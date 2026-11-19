@@ -21,7 +21,7 @@ The application is organized into modules for:
 
 ## Project files
 
-The original Python project is available in [`ContactBook.rar`](ContactBook.rar). Its application files include:
+The Python source files are available directly in this repository. The original project archive is preserved in [`ContactBook.rar`](ContactBook.rar). Its application files include:
 
 | File | Purpose |
 | --- | --- |
@@ -37,8 +37,8 @@ The original Python project is available in [`ContactBook.rar`](ContactBook.rar)
 
 ## Run locally
 
-1. Download and extract [`ContactBook.rar`](ContactBook.rar).
-2. Open a terminal in the extracted `Contact` directory.
+1. Clone or download this repository.
+2. Open a terminal in the repository directory.
 3. Run:
 
 ```bash
